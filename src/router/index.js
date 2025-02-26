@@ -19,6 +19,11 @@ const router = createRouter({
       name: 'use-clipboard',
       component: () => import('../views/UseClipboardView.vue'),
     },
+    {
+      path: '/use-dark',
+      name: 'use-dark',
+      component: () => import('../views/UseDarkView.vue'),
+    },
   ],
 })
 

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1 class="relative text-5xl text-gray-100">Select the lesson you’re interested in.</h1>
+    <h1 class="relative text-5xl dark:text-gray-100">Select the lesson you’re interested in.</h1>
   </main>
 </template>
 

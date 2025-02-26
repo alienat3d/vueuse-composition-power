@@ -8,6 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/use-title">useTitle</RouterLink>
       <RouterLink to="/use-clipboard">useClipboard</RouterLink>
+      <RouterLink to="/use-dark">useDark</RouterLink>
     </nav>
   </header>
 
@@ -15,12 +16,25 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style>
+@import 'tailwindcss';
+
+.dark body {
+  /* background-color: #252525; */
+  background-color: #060525;
+  color: #ddd;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #060525;
+  background-color: #efefef;
+  color: #252525;
+}
+
+button {
+  @apply py-3 px-5 border-2 rounded-2xl cursor-pointer;
 }
 
 nav {
@@ -30,28 +44,41 @@ nav {
 
 nav a {
   position: relative;
-  color: #aaa;
+  color: #777;
   font-size: 18px;
   font-weight: 500;
   border-bottom: 1px dotted transparent;
   transition: all 0.3s ease-in-out;
 }
+.dark nav a {
+  color: #aaa;
+}
 nav a:hover {
+  color: #000;
+}
+.dark nav a:hover {
   color: #eee;
 }
 
 nav a:not(nav a:first-child)::before {
   content: '|';
   position: absolute;
-  left: -9px;
+  left: -10px;
   bottom: 2px;
 }
 nav a::before {
+  color: #000;
+}
+.dark nav a::before {
   color: #aaa;
 }
 
 .router-link-exact-active {
   cursor: default;
+  border-color: #252525;
+  color: #252525;
+}
+.dark .router-link-exact-active {
   border-color: #ccc;
   color: #ccc;
 }

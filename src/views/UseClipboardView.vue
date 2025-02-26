@@ -27,10 +27,10 @@ const { copy, copied, text, isSupported } = useClipboard({ copiedDuring: 3000 })
     >
       {{ copied ? 'Copied' : 'Copy' }}
     </button>
-    <p v-show="copied" class="absolute -bottom-10 text-green-500 w-lg">
+    <p v-show="copied" class="absolute -bottom-10 text-green-600 dark:text-green-500 w-lg">
       {{ `This is what in your clipboard right now: ${text}` }}
     </p>
-    <p v-show="isSupported" class="absolute -bottom-50 text-green-200 w-lg">
+    <p v-show="isSupported" class="absolute -bottom-50 text-green-700 dark:text-green-200 w-lg">
       {{
         isSupported
           ? 'Cool! Your browser supports copying data to the clipboard.'
