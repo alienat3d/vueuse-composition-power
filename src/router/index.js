@@ -24,6 +24,11 @@ const router = createRouter({
       name: 'use-dark',
       component: () => import('../views/UseDarkView.vue'),
     },
+    {
+      path: '/on-key-stroke',
+      name: 'on-key-stroke',
+      component: () => import('../views/onKeyStrokeView.vue'),
+    },
   ],
 })
 
