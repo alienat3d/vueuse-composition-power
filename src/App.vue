@@ -10,6 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/use-clipboard">useClipboard</RouterLink>
       <RouterLink to="/use-dark">useDark</RouterLink>
       <RouterLink to="/on-key-stroke">onKeyStroke</RouterLink>
+      <RouterLink to="/use-magic-keys">useMagicKeys</RouterLink>
     </nav>
   </header>
 

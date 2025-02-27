@@ -29,6 +29,11 @@ const router = createRouter({
       name: 'on-key-stroke',
       component: () => import('../views/onKeyStrokeView.vue'),
     },
+    {
+      path: '/use-magic-keys',
+      name: 'use-magic-keys',
+      component: () => import('../views/useMagicKeysView.vue'),
+    },
   ],
 })
 

@@ -62,8 +62,8 @@ onKeyStroke(Object.keys(controls), (e) => {
 <style>
 .ball {
   position: absolute;
-  top: v-bind(position.y + 'px');
-  left: v-bind(position.x + 'px');
+  top: v-bind("position.y + 'px'");
+  left: v-bind("position.x + 'px'");
   border-radius: 50%;
   width: 30px;
   height: 30px;
