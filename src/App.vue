@@ -8,9 +8,12 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/use-title">useTitle</RouterLink>
       <RouterLink to="/use-clipboard">useClipboard</RouterLink>
-      <RouterLink to="/use-dark">useDark</RouterLink>
+      <RouterLink class="relative use-dark-link" to="/use-dark">useDark</RouterLink>
       <RouterLink to="/on-key-stroke">onKeyStroke</RouterLink>
-      <RouterLink to="/use-magic-keys">useMagicKeys</RouterLink>
+      <RouterLink class="relative use-magic-keys-link" to="/use-magic-keys"
+        >useMagicKeys</RouterLink
+      >
+      <RouterLink class="relative use-battery-link" to="/use-battery">useBattery</RouterLink>
     </nav>
   </header>
 
@@ -83,5 +86,24 @@ nav a::before {
 .dark .router-link-exact-active {
   border-color: #ccc;
   color: #ccc;
+}
+
+.use-dark-link:hover.use-dark-link::after,
+.use-magic-keys-link:hover.use-magic-keys-link::after,
+.use-battery-link:hover.use-battery-link::after {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.use-dark-link:hover.use-dark-link::after {
+  content: 'and also: "useToggle"';
+}
+
+.use-magic-keys-link:hover.use-magic-keys-link::after {
+  content: 'and also: "whenever"';
+}
+
+.use-battery-link:hover.use-battery-link::after {
+  content: 'and also: "useOnline", "useNetwork", "useGeolocation"';
 }
 </style>

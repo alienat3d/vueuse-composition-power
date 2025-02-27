@@ -34,6 +34,11 @@ const router = createRouter({
       name: 'use-magic-keys',
       component: () => import('../views/useMagicKeysView.vue'),
     },
+    {
+      path: '/use-battery',
+      name: 'use-battery',
+      component: () => import('../views/useBatteryView.vue'),
+    },
   ],
 })
 
