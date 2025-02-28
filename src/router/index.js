@@ -39,6 +39,21 @@ const router = createRouter({
       name: 'use-battery',
       component: () => import('../views/useBatteryView.vue'),
     },
+    {
+      path: '/use-page-leave',
+      name: 'use-page-leave',
+      component: () => import('../views/usePageLeaveView.vue'),
+    },
+    {
+      path: '/use-pointer',
+      name: 'use-pointer',
+      component: () => import('../views/usePointerView.vue'),
+    },
+    {
+      path: '/on-long-press',
+      name: 'on-long-press',
+      component: () => import('../views/OnLongPressView.vue'),
+    },
   ],
 })
 

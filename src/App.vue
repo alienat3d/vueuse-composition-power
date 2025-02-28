@@ -14,6 +14,9 @@ import { RouterLink, RouterView } from 'vue-router'
         >useMagicKeys</RouterLink
       >
       <RouterLink class="relative use-battery-link" to="/use-battery">useBattery</RouterLink>
+      <RouterLink to="/use-page-leave">usePageLeave</RouterLink>
+      <RouterLink to="/use-pointer">usePointer</RouterLink>
+      <RouterLink to="/on-long-press">onLongPress</RouterLink>
     </nav>
   </header>
 
