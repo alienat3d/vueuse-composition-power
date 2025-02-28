@@ -3,24 +3,27 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header class="fixed top-7 left-1/2 -translate-x-1/2">
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/use-title">useTitle</RouterLink>
-      <RouterLink to="/use-clipboard">useClipboard</RouterLink>
-      <RouterLink class="relative use-dark-link" to="/use-dark">useDark</RouterLink>
-      <RouterLink to="/on-key-stroke">onKeyStroke</RouterLink>
-      <RouterLink class="relative use-magic-keys-link" to="/use-magic-keys"
-        >useMagicKeys</RouterLink
-      >
-      <RouterLink class="relative use-battery-link" to="/use-battery">useBattery</RouterLink>
-      <RouterLink to="/use-page-leave">usePageLeave</RouterLink>
-      <RouterLink to="/use-pointer">usePointer</RouterLink>
-      <RouterLink to="/on-long-press">onLongPress</RouterLink>
-    </nav>
-  </header>
-
-  <RouterView />
+  <div class="container">
+    <header class="fixed top-7 left-1/2 -translate-x-1/2">
+      <nav class="flex flex-wrap">
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/use-title">useTitle</RouterLink>
+        <RouterLink to="/use-clipboard">useClipboard</RouterLink>
+        <RouterLink to="/use-dark">useDark & onToggle</RouterLink>
+        <RouterLink to="/use-color-mode">useColorMode</RouterLink>
+        <RouterLink to="/on-key-stroke">onKeyStroke</RouterLink>
+        <RouterLink to="/use-magic-keys">useMagicKeys & whenever</RouterLink>
+        <RouterLink to="/use-battery">useBattery</RouterLink>
+        <RouterLink to="/use-online">useOnlineView</RouterLink>
+        <RouterLink to="/use-network">useNetworkView</RouterLink>
+        <RouterLink to="/use-geolocation">useGeolocationView</RouterLink>
+        <RouterLink to="/use-page-leave">usePageLeave</RouterLink>
+        <RouterLink to="/use-pointer">usePointer</RouterLink>
+        <RouterLink to="/on-long-press">onLongPress</RouterLink>
+      </nav>
+    </header>
+    <RouterView />
+  </div>
 </template>
 
 <style>
@@ -47,7 +50,7 @@ button {
 
 nav {
   display: flex;
-  gap: 16px;
+  gap: 5px 16px;
 }
 
 nav a {
@@ -89,24 +92,5 @@ nav a::before {
 .dark .router-link-exact-active {
   border-color: #ccc;
   color: #ccc;
-}
-
-.use-dark-link:hover.use-dark-link::after,
-.use-magic-keys-link:hover.use-magic-keys-link::after,
-.use-battery-link:hover.use-battery-link::after {
-  position: absolute;
-  top: 30px;
-  left: 0;
-}
-.use-dark-link:hover.use-dark-link::after {
-  content: 'and also: "useToggle"';
-}
-
-.use-magic-keys-link:hover.use-magic-keys-link::after {
-  content: 'and also: "whenever"';
-}
-
-.use-battery-link:hover.use-battery-link::after {
-  content: 'and also: "useOnline", "useNetwork", "useGeolocation"';
 }
 </style>

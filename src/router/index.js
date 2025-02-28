@@ -25,29 +25,49 @@ const router = createRouter({
       component: () => import('../views/UseDarkView.vue'),
     },
     {
+      path: '/use-color-mode',
+      name: 'use-color-mode',
+      component: () => import('../views/UseColorModeView.vue'),
+    },
+    {
       path: '/on-key-stroke',
       name: 'on-key-stroke',
-      component: () => import('../views/onKeyStrokeView.vue'),
+      component: () => import('../views/OnKeyStrokeView.vue'),
     },
     {
       path: '/use-magic-keys',
       name: 'use-magic-keys',
-      component: () => import('../views/useMagicKeysView.vue'),
+      component: () => import('../views/UseMagicKeysView.vue'),
     },
     {
       path: '/use-battery',
       name: 'use-battery',
-      component: () => import('../views/useBatteryView.vue'),
+      component: () => import('../views/UseBatteryView.vue'),
+    },
+    {
+      path: '/use-online',
+      name: 'use-online',
+      component: () => import('../views/UseOnlineView.vue'),
+    },
+    {
+      path: '/use-network',
+      name: 'use-network',
+      component: () => import('../views/UseNetworkView.vue'),
+    },
+    {
+      path: '/use-geolocation',
+      name: 'use-geolocation',
+      component: () => import('../views/UseGeolocationView.vue'),
     },
     {
       path: '/use-page-leave',
       name: 'use-page-leave',
-      component: () => import('../views/usePageLeaveView.vue'),
+      component: () => import('../views/UsePageLeaveView.vue'),
     },
     {
       path: '/use-pointer',
       name: 'use-pointer',
-      component: () => import('../views/usePointerView.vue'),
+      component: () => import('../views/UsePointerView.vue'),
     },
     {
       path: '/on-long-press',
