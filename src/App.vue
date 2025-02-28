@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div class="container">
-    <header class="fixed top-7 left-1/2 -translate-x-1/2">
+    <header class="fixed pt-7 top-0 left-1/2 -translate-x-1/2">
       <nav class="flex flex-wrap">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/use-title">useTitle</RouterLink>
@@ -20,6 +20,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-page-leave">usePageLeave</RouterLink>
         <RouterLink to="/use-pointer">usePointer</RouterLink>
         <RouterLink to="/on-long-press">onLongPress</RouterLink>
+        <RouterLink to="/use-scroll">useScroll</RouterLink>
+        <RouterLink to="/use-infinite-scroll">useInfiniteScroll</RouterLink>
       </nav>
     </header>
     <RouterView />
@@ -46,6 +48,13 @@ body {
 
 button {
   @apply py-3 px-5 border-2 rounded-2xl cursor-pointer;
+}
+
+header {
+  background-color: #efefef;
+}
+.dark header {
+  background-color: #060525;
 }
 
 nav {

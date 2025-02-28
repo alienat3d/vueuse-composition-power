@@ -74,6 +74,16 @@ const router = createRouter({
       name: 'on-long-press',
       component: () => import('../views/OnLongPressView.vue'),
     },
+    {
+      path: '/use-scroll',
+      name: 'use-scroll',
+      component: () => import('../views/UseScrollView.vue'),
+    },
+    {
+      path: '/use-infinite-scroll',
+      name: 'use-infinite-scroll',
+      component: () => import('../views/UseInfiniteScrollView.vue'),
+    },
   ],
 })
 
