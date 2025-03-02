@@ -25,6 +25,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-display-media">useDisplayMedia</RouterLink>
         <RouterLink to="/use-interval">useInterval</RouterLink>
         <RouterLink to="/use-interval-fn">useIntervalFn</RouterLink>
+        <RouterLink to="/use-raf-fn">useRafFn</RouterLink>
       </nav>
     </header>
     <RouterView />

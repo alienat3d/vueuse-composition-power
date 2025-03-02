@@ -99,6 +99,11 @@ const router = createRouter({
       name: 'use-interval-fn',
       component: () => import('../views/UseIntervalFnView.vue'),
     },
+    {
+      path: '/use-raf-fn',
+      name: 'use-raf-fn',
+      component: () => import('../views/UseRafFnView.vue'),
+    },
   ],
 })
 

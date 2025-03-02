@@ -1,13 +1,39 @@
 <!-- * 10.7 Но, если нам не нужен счётчик, а нужно всего лишь вызывать функцию по интервалу, то можно облегчить себе жить при помощи специальной утилиты "useIntervalFn", которая сделает всё тоже самое, что и на предыдущем примере с "useInterval", но без "watch" и без "counter". -->
+<!-- ? 11.7 Хотя использования интервалов вполне допустимо для простой анимации и для сайтов, где нет слишком много анимаций, но всё же requestAnimationFrame более рекомендованный подход для анимации спрайтов, как наш. -->
 <script setup>
+import { ref } from 'vue'
 import { useIntervalFn } from '@vueuse/core'
 
-const { pause, resume, isActive } = useIntervalFn(() => console.log('Hello world!'))
+// 11.2 Также создадим реф со стартовым значением 0.
+const activePosition = ref(0)
+
+// 11.4 Осталось поместить изменения значения activePosition при помощи "useIntervalFn". Почему используется число -525? Это 75 * 7, на одно число меньше, чем число имеющихся кадров анимации, т.к. на 0 у нас есть ещё кадр.
+// 11.5 Ну, и по достижении последнего кадра нам нужно вернуться к первому кадру, т.о. превращая анимацию в бесконечный цикл.
+// 11.6 Также ускорим его, установив интервал на 120 мс. По моему выглядит отлично!
+useIntervalFn(() => {
+  if (activePosition.value > -525) {
+    activePosition.value -= 75
+  } else {
+    activePosition.value = 0
+  }
+}, 120)
 </script>
 
 <template>
-  <h1 class="mb-5 text-4xl">Check the Console!</h1>
+  <!-- <h1 class="mb-5 text-4xl">Check the Console!</h1>
   <button @click="isActive ? pause() : resume()" class="min-w-28 ml-24 mx-auto">
     {{ isActive ? 'Pause' : 'Resume' }}
-  </button>
+  </button> -->
+  <!-- * 11.0 А теперь сделаем что-то поинтереснее — используем useIntervalFn для анимации спрайтового изображения!  -->
+  <!-- 11.3 Ну, и чтобы приводить в движение человека нам нужно указывать "background-position" стиль динамически. -->
+  <div class="sprite" :style="`background-position: ${activePosition}px 50%;`"></div>
 </template>
+
+<!-- 11.1 В стилях нам нужно указать ссылку на изображение, а также определённую высоту и ширину, чтобы отображать лишь одно изображение за раз. А ещё укажем позиционирование изображения на 0px и 50%, чтобы показать первое изображение из спрайта. -->
+<style scoped>
+.sprite {
+  width: 75px;
+  height: 150px;
+  background: url('./src/assets/walking-guy.png') no-repeat;
+}
+</style>
