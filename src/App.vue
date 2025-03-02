@@ -22,6 +22,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/on-long-press">onLongPress</RouterLink>
         <RouterLink to="/use-scroll">useScroll</RouterLink>
         <RouterLink to="/use-infinite-scroll">useInfiniteScroll</RouterLink>
+        <RouterLink to="/use-display-media">useDisplayMedia</RouterLink>
       </nav>
     </header>
     <RouterView />

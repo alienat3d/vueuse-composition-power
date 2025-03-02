@@ -84,6 +84,11 @@ const router = createRouter({
       name: 'use-infinite-scroll',
       component: () => import('../views/UseInfiniteScrollView.vue'),
     },
+    {
+      path: '/use-display-media',
+      name: 'use-display-media',
+      component: () => import('../views/UseDisplayMediaView.vue'),
+    },
   ],
 })
 

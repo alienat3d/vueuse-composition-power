@@ -1,6 +1,6 @@
 <!-- * 8.3 "useInfiniteScroll": ещё один довольно часто используемая в веб-приложениях фича "бесконечный скролл". Это, когда во время того, как пользователь скроллит страницу вниз, новый контент добавляется на страницу. Например так работает feed на Facebook. -->
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useInfiniteScroll } from '@vueuse/core'
 
 const el = ref(null) /* хранит div из шаблона */
@@ -25,6 +25,8 @@ async function loadData() {
     d.products,
   ) /* добавляем в data ref все продукты из ответа от API */
 }
+
+onMounted(() => (el.value = document))
 </script>
 
 <template>
