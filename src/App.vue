@@ -23,6 +23,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-scroll">useScroll</RouterLink>
         <RouterLink to="/use-infinite-scroll">useInfiniteScroll</RouterLink>
         <RouterLink to="/use-display-media">useDisplayMedia</RouterLink>
+        <RouterLink to="/use-interval">useInterval</RouterLink>
+        <RouterLink to="/use-interval-fn">useIntervalFn</RouterLink>
       </nav>
     </header>
     <RouterView />

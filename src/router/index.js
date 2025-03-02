@@ -89,6 +89,16 @@ const router = createRouter({
       name: 'use-display-media',
       component: () => import('../views/UseDisplayMediaView.vue'),
     },
+    {
+      path: '/use-interval',
+      name: 'use-interval',
+      component: () => import('../views/UseIntervalView.vue'),
+    },
+    {
+      path: '/use-interval-fn',
+      name: 'use-interval-fn',
+      component: () => import('../views/UseIntervalFnView.vue'),
+    },
   ],
 })
 
