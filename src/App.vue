@@ -31,6 +31,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-timestamp">useTimestamp</RouterLink>
         <RouterLink to="/use-now">useNow</RouterLink>
         <RouterLink to="/use-transition">useTransition</RouterLink>
+        <RouterLink to="/use-ref-history">UseRefHistory</RouterLink>
+        <RouterLink to="/use-debounced-ref-history">UseDebouncedRefHistory</RouterLink>
       </nav>
     </header>
     <RouterView />

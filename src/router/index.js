@@ -124,6 +124,16 @@ const router = createRouter({
       name: '/use-transition',
       component: () => import('../views/UseTransitionView.vue'),
     },
+    {
+      path: '/use-ref-history',
+      name: '/use-ref-history',
+      component: () => import('../views/UseRefHistoryView.vue'),
+    },
+    {
+      path: '/use-debounced-ref-history',
+      name: '/use-debounced-ref-history',
+      component: () => import('../views/UseDebouncedRefHistoryView.vue'),
+    },
   ],
 })
 
