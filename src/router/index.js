@@ -119,6 +119,11 @@ const router = createRouter({
       name: '/use-now',
       component: () => import('../views/UseNowView.vue'),
     },
+    {
+      path: '/use-transition',
+      name: '/use-transition',
+      component: () => import('../views/UseTransitionView.vue'),
+    },
   ],
 })
 

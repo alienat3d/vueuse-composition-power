@@ -30,6 +30,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-timeout-fn">useTimeoutFn</RouterLink>
         <RouterLink to="/use-timestamp">useTimestamp</RouterLink>
         <RouterLink to="/use-now">useNow</RouterLink>
+        <RouterLink to="/use-transition">useTransition</RouterLink>
       </nav>
     </header>
     <RouterView />
