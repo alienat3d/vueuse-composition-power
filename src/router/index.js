@@ -114,6 +114,11 @@ const router = createRouter({
       name: '/use-timeout-fn',
       component: () => import('../views/UseTimeoutFnView.vue'),
     },
+    {
+      path: '/use-now',
+      name: '/use-now',
+      component: () => import('../views/UseNowView.vue'),
+    },
   ],
 })
 
