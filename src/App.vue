@@ -26,6 +26,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-interval">useInterval</RouterLink>
         <RouterLink to="/use-interval-fn">useIntervalFn</RouterLink>
         <RouterLink to="/use-raf-fn">useRafFn</RouterLink>
+        <RouterLink to="/use-timeout">useTimeout</RouterLink>
+        <RouterLink to="/use-timeout-fn">useTimeoutFn</RouterLink>
       </nav>
     </header>
     <RouterView />

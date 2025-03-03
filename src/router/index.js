@@ -104,6 +104,16 @@ const router = createRouter({
       name: 'use-raf-fn',
       component: () => import('../views/UseRafFnView.vue'),
     },
+    {
+      path: '/use-timeout',
+      name: '/use-timeout',
+      component: () => import('../views/UseTimeoutView.vue'),
+    },
+    {
+      path: '/use-timeout-fn',
+      name: '/use-timeout-fn',
+      component: () => import('../views/UseTimeoutFnView.vue'),
+    },
   ],
 })
 
