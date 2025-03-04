@@ -33,6 +33,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-transition">useTransition</RouterLink>
         <RouterLink to="/use-ref-history">UseRefHistory</RouterLink>
         <RouterLink to="/use-debounced-ref-history">UseDebouncedRefHistory</RouterLink>
+        <RouterLink to="/use-local-storage">UseLocalStorage</RouterLink>
       </nav>
     </header>
     <RouterView />

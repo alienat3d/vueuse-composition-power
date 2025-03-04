@@ -134,6 +134,11 @@ const router = createRouter({
       name: '/use-debounced-ref-history',
       component: () => import('../views/UseDebouncedRefHistoryView.vue'),
     },
+    {
+      path: '/use-local-storage',
+      name: '/use-local-storage',
+      component: () => import('../views/UseLocalStorageView.vue'),
+    },
   ],
 })
 

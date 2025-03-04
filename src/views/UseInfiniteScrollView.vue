@@ -34,8 +34,8 @@ onMounted(() => (el.value = document))
     <!-- циклом распечатываем из полученных данных карточки товаров -->
     <div v-for="item in data" class="card" :key="item.title">
       <img :src="item.thumbnail" alt="" />
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.description }}</p>
+      <h3 class="mb-3 font-bold text-center">{{ item.title }}</h3>
+      <p class="text-center">{{ item.description }}</p>
     </div>
   </div>
 </template>
@@ -47,7 +47,9 @@ body,
   height: 100%;
 }
 .el {
-  height: 100%;
+  margin-top: 150px;
+  /* height: 100%; */
+  height: 800px;
   overflow-y: scroll;
 }
 .card {
@@ -55,6 +57,7 @@ body,
   border-radius: 10px;
   margin: 30px 10px;
   padding: 20px;
+  max-width: 300px;
 }
 img {
   border-radius: 10px;
