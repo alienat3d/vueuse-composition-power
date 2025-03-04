@@ -40,6 +40,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-base-64">useBase64</RouterLink>
         <RouterLink to="/computed-async">computedAsync</RouterLink>
         <RouterLink to="/logic-operators">logicAnd, logicNot, logicOr</RouterLink>
+        <RouterLink to="/use-cycle-list">useCycleList</RouterLink>
       </nav>
     </header>
     <RouterView />

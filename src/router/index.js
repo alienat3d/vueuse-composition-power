@@ -115,6 +115,11 @@ const router = createRouter({
       component: () => import('../views/UseTimeoutFnView.vue'),
     },
     {
+      path: '/use-timestamp',
+      name: 'use-timestamp',
+      component: () => import('../views/UseTimestampView.vue'),
+    },
+    {
       path: '/use-now',
       name: 'use-now',
       component: () => import('../views/UseNowView.vue'),
@@ -168,6 +173,11 @@ const router = createRouter({
       path: '/logic-operators',
       name: 'logic-operators',
       component: () => import('../views/LogicOperatorsView.vue'),
+    },
+    {
+      path: '/use-cycle-list',
+      name: 'use-cycle-list',
+      component: () => import('../views/UseCycleListView.vue'),
     },
   ],
 })
