@@ -21,5 +21,5 @@ const { base64 } = useBase64(image)
   />
   <!-- <p class="text-xl w-96 break-words">{{ base64 }}</p> -->
   <!-- 15.6 А теперь можно создать элемент картинки для превью и указать атрибуту src base64. -->
-  <img class="w-64" v-if="image" :src="base64" alt="Preview" />
+  <img class="w-76 mx-auto" v-if="image" :src="base64" alt="Preview" />
 </template>
