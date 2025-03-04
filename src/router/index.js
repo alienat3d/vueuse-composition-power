@@ -159,6 +159,16 @@ const router = createRouter({
       name: 'use-base-64',
       component: () => import('../views/UseBase64View.vue'),
     },
+    {
+      path: '/computed-async',
+      name: 'computed-async',
+      component: () => import('../views/ComputedAsyncView.vue'),
+    },
+    {
+      path: '/logic-operators',
+      name: 'logic-operators',
+      component: () => import('../views/LogicOperatorsView.vue'),
+    },
   ],
 })
 

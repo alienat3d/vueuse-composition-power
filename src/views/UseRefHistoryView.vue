@@ -12,8 +12,8 @@ const { history, redo, undo } = useRefHistory(name)
 <!-- 15.2 А в шаблоне мы привяжем инпут к этому рефу, а также сделаем кнопки "Undo" & "Redo" для управления и ещё будем выводить содержимое "history" на страницу. -->
 <template>
   <div class="relative">
-    <div class="mt-20">
-      <input v-model="name" type="text" class="mb-5 border-2" />
+    <div class="my-10 flex gap-3 items-center">
+      <input v-model="name" type="text" class="border-2" />
       <button @click="undo">Undo</button>
       <button @click="redo">Redo</button>
     </div>
