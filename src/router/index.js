@@ -106,48 +106,58 @@ const router = createRouter({
     },
     {
       path: '/use-timeout',
-      name: '/use-timeout',
+      name: 'use-timeout',
       component: () => import('../views/UseTimeoutView.vue'),
     },
     {
       path: '/use-timeout-fn',
-      name: '/use-timeout-fn',
+      name: 'use-timeout-fn',
       component: () => import('../views/UseTimeoutFnView.vue'),
     },
     {
       path: '/use-now',
-      name: '/use-now',
+      name: 'use-now',
       component: () => import('../views/UseNowView.vue'),
     },
     {
       path: '/use-transition',
-      name: '/use-transition',
+      name: 'use-transition',
       component: () => import('../views/UseTransitionView.vue'),
     },
     {
       path: '/use-ref-history',
-      name: '/use-ref-history',
+      name: 'use-ref-history',
       component: () => import('../views/UseRefHistoryView.vue'),
     },
     {
       path: '/use-debounced-ref-history',
-      name: '/use-debounced-ref-history',
+      name: 'use-debounced-ref-history',
       component: () => import('../views/UseDebouncedRefHistoryView.vue'),
     },
     {
       path: '/use-local-storage',
-      name: '/use-local-storage',
+      name: 'use-local-storage',
       component: () => import('../views/UseLocalStorageView.vue'),
     },
     {
       path: '/use-fetch',
-      name: '/use-fetch',
+      name: 'use-fetch',
       component: () => import('../views/UseFetchView.vue'),
     },
     {
       path: '/reactify',
-      name: '/reactify',
+      name: 'reactify',
       component: () => import('../views/ReactifyView.vue'),
+    },
+    {
+      path: '/ref-auto-reset',
+      name: 'ref-auto-reset',
+      component: () => import('../views/RefAutoResetView.vue'),
+    },
+    {
+      path: '/use-base-64',
+      name: 'use-base-64',
+      component: () => import('../views/UseBase64View.vue'),
     },
   ],
 })

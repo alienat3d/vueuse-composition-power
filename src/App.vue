@@ -36,6 +36,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-local-storage">useLocalStorage</RouterLink>
         <RouterLink to="/use-fetch">useFetch</RouterLink>
         <RouterLink to="/reactify">reactify</RouterLink>
+        <RouterLink to="/ref-auto-reset">refAutoReset</RouterLink>
+        <RouterLink to="/use-base-64">useBase64</RouterLink>
       </nav>
     </header>
     <RouterView />
