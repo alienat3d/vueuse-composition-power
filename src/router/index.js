@@ -139,6 +139,16 @@ const router = createRouter({
       name: '/use-local-storage',
       component: () => import('../views/UseLocalStorageView.vue'),
     },
+    {
+      path: '/use-fetch',
+      name: '/use-fetch',
+      component: () => import('../views/UseFetchView.vue'),
+    },
+    {
+      path: '/reactify',
+      name: '/reactify',
+      component: () => import('../views/ReactifyView.vue'),
+    },
   ],
 })
 
