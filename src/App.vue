@@ -41,6 +41,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/computed-async">computedAsync</RouterLink>
         <RouterLink to="/logic-operators">logicAnd, logicNot, logicOr</RouterLink>
         <RouterLink to="/use-cycle-list">useCycleList</RouterLink>
+        <RouterLink to="/use-cycle-list-alt">useCycleList (custom composable)</RouterLink>
       </nav>
     </header>
     <RouterView />

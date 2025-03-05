@@ -179,6 +179,11 @@ const router = createRouter({
       name: 'use-cycle-list',
       component: () => import('../views/UseCycleListView.vue'),
     },
+    {
+      path: '/use-cycle-list-alt',
+      name: 'use-cycle-list-alt',
+      component: () => import('../views/UseCycleListAltView.vue'),
+    },
   ],
 })
 
