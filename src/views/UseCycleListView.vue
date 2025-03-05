@@ -26,6 +26,11 @@ const { state, prev, next } = useCycleList([
 </template>
 
 <style>
+/* Чтобы не было скачков из-за скролла при переключении слайдов. */
+/* body {
+  overflow-y: hidden;
+} */
+
 .v-enter-active,
 .v-leave-active {
   transition: all 0.4s ease;
