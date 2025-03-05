@@ -42,6 +42,9 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/logic-operators">logicAnd, logicNot, logicOr</RouterLink>
         <RouterLink to="/use-cycle-list">useCycleList</RouterLink>
         <RouterLink to="/use-cycle-list-alt">useCycleList (custom composable)</RouterLink>
+        <RouterLink to="/use-window-size">useWindowSize</RouterLink>
+        <RouterLink to="/use-window-focus">useWindowFocus</RouterLink>
+        <RouterLink to="/use-intersection-observer">useIntersectionObserver</RouterLink>
       </nav>
     </header>
     <RouterView />

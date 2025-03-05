@@ -184,6 +184,21 @@ const router = createRouter({
       name: 'use-cycle-list-alt',
       component: () => import('../views/UseCycleListAltView.vue'),
     },
+    {
+      path: '/use-window-size',
+      name: 'use-window-size',
+      component: () => import('../views/UseWindowSizeView.vue'),
+    },
+    {
+      path: '/use-window-focus',
+      name: 'use-window-focus',
+      component: () => import('../views/UseWindowFocusView.vue'),
+    },
+    {
+      path: '/use-intersection-observer',
+      name: 'use-intersection-observer',
+      component: () => import('../views/UseIntersectionObserverView.vue'),
+    },
   ],
 })
 

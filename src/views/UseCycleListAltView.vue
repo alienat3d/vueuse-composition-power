@@ -68,3 +68,4 @@ const direction = computed(() => {
 }
 </style>
 <!-- ? 18.8 Но пока ещё это не сработает, т.к. нам нужно прописать добавление новых сущностей "isForward" & "isBackward". Для этого создадим ещё один файл в директории "src" — [src\useAppCycleList.js] (мы добавили в название файла "App", чтобы указать, что это кастомная доработка оригинальной утилиты) -->
+<!-- https://stackblitz.com/edit/vitejs-vite-myp3ua?file=src%2FApp.vue -->
