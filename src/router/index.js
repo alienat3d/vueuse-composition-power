@@ -199,6 +199,16 @@ const router = createRouter({
       name: 'use-intersection-observer',
       component: () => import('../views/UseIntersectionObserverView.vue'),
     },
+    {
+      path: '/use-virtual-list',
+      name: 'use-virtual-list',
+      component: () => import('../views/UseVirtualListView.vue'),
+    },
+    {
+      path: '/salary-calc',
+      name: 'salary-calc',
+      component: () => import('../views/SalaryCalc.vue'),
+    },
   ],
 })
 
