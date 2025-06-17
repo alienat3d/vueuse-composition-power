@@ -46,6 +46,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-window-focus">useWindowFocus</RouterLink>
         <RouterLink to="/use-intersection-observer">useIntersectionObserver</RouterLink>
         <RouterLink to="/use-virtual-list">useVirtualList</RouterLink>
+        <RouterLink to="/use-v-model">useVModel</RouterLink>
         <RouterLink to="/salary-calc">Salary Calc</RouterLink>
       </nav>
     </header>

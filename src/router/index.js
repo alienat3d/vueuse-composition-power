@@ -205,6 +205,11 @@ const router = createRouter({
       component: () => import('../views/UseVirtualListView.vue'),
     },
     {
+      path: '/use-v-model',
+      name: 'use-v-model',
+      component: () => import('../views/UseVModelView.vue'),
+    },
+    {
       path: '/salary-calc',
       name: 'salary-calc',
       component: () => import('../views/SalaryCalc.vue'),

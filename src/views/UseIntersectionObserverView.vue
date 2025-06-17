@@ -8,7 +8,7 @@ const h1 = ref(null)
 // 19.6 Нам также полезно будет создать реф, который будет обновлять значение "isIntersecting" всякий раз, когда коллбэк-функция запустится.
 const h1IsVisible = ref(false)
 
-// 19.5 Теперь, чтобы наблюдать за нашим элементом h1 поместим его первым аргументом в функцию "useIntersectionObserver", а вторым аргументом будет коллбэк-функция, которая запустится, когда h1 элемент будет в области видимости. Эта функция получит массив объектов "IntersectionObserverEntry". Подробнее об этом можно прочесть в доке: (https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver). Но пока нас здесь интересует свойство "isIntersecting" первой записи
+// 19.5 Теперь, чтобы наблюдать за нашим элементом h1 поместим его первым аргументом в функцию "useIntersectionObserver", а вторым аргументом будет коллбэк-функция, которая запустится, когда h1 элемент будет в области видимости. Эта функция получит массив объектов "IntersectionObserverEntry". Подробнее об этом можно прочесть в доке: (https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver). Но пока нас здесь интересует свойство "isIntersecting" первой записи.
 useIntersectionObserver(h1, ([{ isIntersecting }]) => {
   h1IsVisible.value = isIntersecting
 })
