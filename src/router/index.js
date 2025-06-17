@@ -235,6 +235,11 @@ const router = createRouter({
       component: () => import('../views/UseConfirmDialogAdvView.vue'),
     },
     {
+      path: '/use-array-difference',
+      name: 'use-array-difference',
+      component: () => import('../views/UseArrayDifferenceView.vue'),
+    },
+    {
       path: '/salary-calc',
       name: 'salary-calc',
       component: () => import('../views/SalaryCalc.vue'),
