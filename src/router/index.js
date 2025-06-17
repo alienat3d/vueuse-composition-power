@@ -210,6 +210,11 @@ const router = createRouter({
       component: () => import('../views/UseVModelView.vue'),
     },
     {
+      path: '/use-alert-favicon',
+      name: 'use-alert-favicon',
+      component: () => import('../views/UseAlertFaviconView.vue'),
+    },
+    {
       path: '/salary-calc',
       name: 'salary-calc',
       component: () => import('../views/SalaryCalc.vue'),
