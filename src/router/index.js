@@ -215,6 +215,11 @@ const router = createRouter({
       component: () => import('../views/UseAlertFaviconView.vue'),
     },
     {
+      path: '/use-alert-favicon-advanced',
+      name: 'use-alert-favicon-advanced',
+      component: () => import('../views/UseAlertFaviconAdvView.vue'),
+    },
+    {
       path: '/salary-calc',
       name: 'salary-calc',
       component: () => import('../views/SalaryCalc.vue'),

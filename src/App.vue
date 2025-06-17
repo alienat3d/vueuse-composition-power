@@ -48,6 +48,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-virtual-list">useVirtualList</RouterLink>
         <RouterLink to="/use-v-model">useVModel</RouterLink>
         <RouterLink to="/use-alert-favicon">useAlertFavicon</RouterLink>
+        <RouterLink to="/use-alert-favicon-advanced">useAlertFavicon (advanced)</RouterLink>
         <RouterLink to="/salary-calc">Salary Calc</RouterLink>
       </nav>
     </header>
