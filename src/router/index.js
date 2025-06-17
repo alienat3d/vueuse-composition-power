@@ -220,6 +220,11 @@ const router = createRouter({
       component: () => import('../views/UseAlertFaviconAdvView.vue'),
     },
     {
+      path: '/use-confirm-dialog',
+      name: 'use-confirm-dialog',
+      component: () => import('../views/UseConfirmDialogView.vue'),
+    },
+    {
       path: '/salary-calc',
       name: 'salary-calc',
       component: () => import('../views/SalaryCalc.vue'),
