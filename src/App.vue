@@ -52,6 +52,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/use-confirm-dialog">useConfirmDialog</RouterLink>
         <RouterLink to="/use-confirm-dialog-advanced">useConfirmDialog (advanced)</RouterLink>
         <RouterLink to="/use-array-difference">useArrayDifference</RouterLink>
+        <RouterLink to="/use-file-system-access">useFileSystemAccess</RouterLink>
         <RouterLink to="/salary-calc">Salary Calc</RouterLink>
       </nav>
     </header>

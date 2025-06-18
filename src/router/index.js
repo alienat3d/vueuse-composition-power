@@ -240,6 +240,11 @@ const router = createRouter({
       component: () => import('../views/UseArrayDifferenceView.vue'),
     },
     {
+      path: '/use-file-system-access',
+      name: 'use-file-system-access',
+      component: () => import('../views/UseFileSystemAccessView.vue'),
+    },
+    {
       path: '/salary-calc',
       name: 'salary-calc',
       component: () => import('../views/SalaryCalc.vue'),
